@@ -1,1 +1,13 @@
-<p>signup works!</p>
+<div class="wrapper">
+    <div class="block">
+        <form [formGroup]="signup">
+            <h2>SIGNUP</h2>
+            <input type="text" placeholder="Enter Name" class="inp" formControlName="name">
+            <input type="text" placeholder="Enter Email" class="inp" formControlName="email">
+            <div class="btns">
+                <button (click)="signupSubmit(signup.value)" [disabled]="signup.invalid">Sign Up</button>
+                <button (click)="goToLogin()">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
