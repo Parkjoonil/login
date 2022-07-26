@@ -25,7 +25,7 @@ export class SignupComponent implements OnInit {
   }
 
   signupSubmit(data: any) {
-
+    
   }
 
   goToLogin() {
